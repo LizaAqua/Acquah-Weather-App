@@ -62,8 +62,8 @@ function formatDay(timestamp) {
 }
 
 function getForecast(city) {
-  let apiKey = "abfec4b8be01abt65a50c3e50o5aa3d7";
-  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${London}&key=${apiKey}&units=metric`;
+  let apiKey = "b2a5adcct04b33178913oc335f405433";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
   axios(apiUrl).then(displayForecast);
 }
 
