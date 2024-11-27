@@ -70,29 +70,26 @@ searchCity("London");
 
 
 function displayForecast() {
-
-let forcastHtml="";
-
-days.forEach(function(day) {
-
+let days = ("Tue", "Wed","Thu","Fri", "Sat");
+let forecastHtml="";
+days.forEach(function (day) {
   forecastHtml =
   forecastHtml +
-' 
-<div class="weather-forecast-day">
+' <div class="weather-forecast-day">
                 <div class="col-2">Tue</div>
                 <div class="weather-forecast-date">$(day)</div>
-                <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" alt=""
-                    width="40" />
+                <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" alt=""width="40" />
                 <div class="weather-temperatures-forecast">
                     <span class="weather-temperature-forcast-max"> 18°C </span>
                     <span class="weather-temperature-forcast-min"> 12°C</span>
                 </div>
             </div>
-'; 
+';
 });
 
 let forecastElement= document.querySelector("#forecast");
-let days = ("Tue", "Wed","Thu","Fri", "Sat");
+forecastElement.innerHTML= forecastHtml;
 
 }
 
+       
