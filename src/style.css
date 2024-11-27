@@ -78,14 +78,10 @@ main {
   font-weight: 500;
 }
 
-.column {
-  column-count: 1;
-  column-gap: 20px;
-}
   
 .weather-forecast {
   margin-top: 20px;
-  justify-content: center;
+  justify-content: space-between;
   display: flex;
 }
 .weather-forecast-day {
