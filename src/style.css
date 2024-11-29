@@ -1,6 +1,6 @@
 body {
-  background-color: #79c2d0
-  font-family: "Quando", serif;
+  background-color: #79c2d0;
+  font-family: "Quando", serif, italic;
 }
 
 a {
@@ -22,7 +22,7 @@ header {
 }
 
 .search-form-input {
-  background-color: #f9f7fe;
+  background-color:#fdffcd;;
   border: none;
   border-radius: 6px;
   width: 80%;
@@ -63,7 +63,7 @@ main {
 }
 
 .weather-app-details strong {
-  color: #f6a452;
+  color:#f6a452;
 }
 
 .weather-app-temperature-container {
